@@ -1,0 +1,108 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8B2626; /* Tom bordô da imagem */
+    color: #000; /* Texto predominantemente preto */
+    font-family: 'Almendra', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+/* Título OptiSphere */
+.main-title {
+    font-family: 'Charm', cursive;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Subtítulos */
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.highlight-text {
+    font-family: 'Charm', cursive;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Blocos de Layout */
+.top-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.bottom-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -40px; /* Sobreposição sutil como na imagem */
+}
+
+/* Estilo das Imagens */
+.image-box img {
+    width: 320px;
+    border-radius: 40px; /* Bordas bem arredondadas */
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Textos específicos */
+.text-block-top {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    max-width: 450px;
+    margin-bottom: 15px;
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.text-block-bottom {
+    max-width: 400px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .top-content, .bottom-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom-content { margin-top: 20px; }
+}
